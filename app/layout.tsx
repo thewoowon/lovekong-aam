@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 
 let title = "LOVEKONG X AAM";
 let description = "문화로운 프로젝트, LOVEKONG과 AAM의 콜라보레이션";
-let ogimage = "http://lovekong.me/seon.png";
+let ogimage = "https://lovekong.me/seon.png";
 let sitename = "LOVEKONG X AAM";
 
 export const metadata: Metadata = {
@@ -18,7 +18,7 @@ export const metadata: Metadata = {
     images: [ogimage],
     title,
     description,
-    url: "http://lovekong.me",
+    url: "https://lovekong.me",
     siteName: sitename,
     locale: "ko_KR",
     type: "website",
