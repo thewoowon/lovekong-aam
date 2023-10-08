@@ -49,7 +49,7 @@ export default function HomePage() {
               src="/seon.png"
               className="w-full object-cover h-96 rounded-2xl sm:mt-0 mt-2"
             />
-            <div className="w-60 bg-white absolute top-0 left-48 pt-1 hover:opacity-100 opacity-0 transition">
+            <div className="sm:w-60 w-44 bg-white absolute top-0 left-48 pt-1 hover:opacity-100 opacity-0 transition">
               <Image
                 alt="search in store"
                 width={82}
@@ -135,12 +135,11 @@ export default function HomePage() {
               {/* // hover하면 회전 */}
               {["07", "08", "14", "15", "21", "22"].map((day, index) => {
                 return (
-                  <div
-                    key={index}
-                    className="w-32 h-32 flex justify-center items-center font-bold text-6xl border-4 border-gray-700 rounded-full hover:rotate-45 hover:bg-[#0029FF] hover:text-[#CBFF37] transition ease-in-out"
-                  >
-                    {day}
-                  </div>
+                  <Link key={index} href={`/gallery/day${day}`}>
+                    <div className="w-24 h-24 sm:h-32 sm:w-32 flex justify-center items-center font-bold text-6xl border-4 border-gray-700 rounded-full hover:rotate-45 hover:bg-[#0029FF] hover:text-[#CBFF37] transition ease-in-out">
+                      {day}
+                    </div>
+                  </Link>
                 );
               })}
             </div>
@@ -159,7 +158,7 @@ export default function HomePage() {
                   // scale-110
                   <div
                     key={index}
-                    className="w-64 h-64 flex justify-center items-center font-bold text-6xl transition ease-in-out hover:scale-110 hover:shadow-lg"
+                    className="w-32 h-32 sm:h-64 sm:w-64 flex justify-center items-center font-bold text-6xl transition ease-in-out hover:scale-110 hover:shadow-lg"
                   >
                     <Image
                       alt="children"
