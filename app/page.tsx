@@ -129,8 +129,10 @@ export default function HomePage() {
             <div className="w-8 h-8 bg-gray-700 rounded-full"></div>
             <div className="w-8 h-8 bg-gray-700 rounded-full"></div>
           </div>
-          <div>
-            <div className="font-semibold text-3xl py-16">프로그램 일정</div>
+          <div className="py-16">
+            <div className="font-semibold text-3xl py-24">
+              프로그램 일정 / 사진
+            </div>
             <div className=" grid-cols-3 grid-rows-2 grid gap-10">
               {/* // hover하면 회전 */}
               {["07", "08", "14", "15", "21", "22"].map((day, index) => {
@@ -144,8 +146,10 @@ export default function HomePage() {
               })}
             </div>
           </div>
-          <div>
-            <div className="font-semibold text-3xl py-16">프로그램 대상</div>
+          <div className="py-16">
+            <div className="font-semibold text-3xl pt-16 pb-32">
+              프로그램 대상
+            </div>
             <div className=" grid-cols-2 grid-rows-2 grid gap-10">
               {/* // hover하면 회전 */}
               {[
@@ -158,7 +162,7 @@ export default function HomePage() {
                   // scale-110
                   <div
                     key={index}
-                    className="w-32 h-32 sm:h-64 sm:w-64 flex justify-center items-center font-bold text-6xl transition ease-in-out hover:scale-110 hover:shadow-lg"
+                    className="w-32 h-32 sm:h-64 sm:w-64 flex justify-center items-center font-bold text-6xl transition ease-in-out hover:scale-110 hover:shadow-lg relative pb-16"
                   >
                     <Image
                       alt="children"
@@ -167,6 +171,35 @@ export default function HomePage() {
                       src={url}
                       className="w-full object-cover"
                     />
+                    {index === 0 && (
+                      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-end text-lg">
+                        <div className="bg-[#CBFF37] text-[#0029FF] rounded-xl px-6 py-1 sm:mt-10 mt-8 mb-1 hover:bg-[#0029FF] hover:text-white transition">
+                          성인
+                        </div>
+                      </div>
+                    )}
+
+                    {index === 1 && (
+                      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-end text-lg">
+                        <div className="bg-[#CBFF37] text-[#0029FF] rounded-xl px-6 py-1 sm:mt-10 mt-8 mb-2 hover:bg-[#0029FF] hover:text-white transition">
+                          초등학생
+                        </div>
+                      </div>
+                    )}
+                    {index === 2 && (
+                      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-end text-lg">
+                        <div className="bg-[#CBFF37] text-[#0029FF] rounded-xl px-6 py-1 sm:mt-10 mt-8 mb-2 hover:bg-[#0029FF] hover:text-white transition">
+                          4~7세
+                        </div>
+                      </div>
+                    )}
+                    {index === 3 && (
+                      <div className="absolute top-0 left-0 w-full h-full flex justify-center items-end text-lg">
+                        <div className="bg-[#CBFF37] text-[#0029FF] rounded-xl px-6 py-1 sm:mt-10 mt-8 mb-2 hover:bg-[#0029FF] hover:text-white transition">
+                          그리고 열정!
+                        </div>
+                      </div>
+                    )}
                   </div>
                 );
               })}

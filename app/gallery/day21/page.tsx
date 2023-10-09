@@ -1,16 +1,16 @@
 import { Suspense } from "react";
 import getImages from "@/utils/getImages";
-import Day07 from "@/components/Day07";
+import Day21 from "@/components/Day21";
 
-const Day07Page = async () => {
+const Day21Page = () => {
   const reducedResults = getImages({
-    folderName: "day07",
+    folderName: "day21",
   });
 
   return (
     <div className="text-black max-w-3xl mx-auto py-10">
       <div>
-        <h1 className="text-4xl font-bold mb-10">Day 07 - Gallery</h1>
+        <h1 className="text-4xl font-bold mb-10">Day 21 - Gallery</h1>
       </div>
       <Suspense
         fallback={
@@ -37,10 +37,10 @@ const Day07Page = async () => {
           </div>
         }
       >
-        <Day07 reducedResults={reducedResults} />
+        <Day21 reducedResults={reducedResults} />
       </Suspense>
     </div>
   );
 };
 
-export default Day07Page;
+export default Day21Page;
