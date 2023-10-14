@@ -23,6 +23,13 @@ export const metadata: Metadata = {
     locale: "ko_KR",
     type: "website",
   },
+  twitter: {
+    site: "@lovekong",
+    card: "summary_large_image",
+    title,
+    description,
+    images: ogimage,
+  },
 };
 
 export default function RootLayout({
