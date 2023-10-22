@@ -206,6 +206,20 @@ export default function HomePage() {
             </div>
           </div>
         </section>
+        <section>
+          <div className="text-black font-semibold text-3xl pt-16 pb-10">
+            추가 프로그램 편성
+          </div>
+          <div className="w-full flex flex-col justify-center items-center text-gray-700 pb-10">
+            <Image
+              alt="lovekong_poster"
+              src={"/lovekong-poster.jpeg"}
+              width={560}
+              height={792}
+              priority
+            />
+          </div>
+        </section>
         <section className="w-full flex flex-col justify-center items-center text-gray-700 pb-10">
           <div className="font-semibold text-3xl py-16">진행</div>
           <div className="flex flex-col pb-10">
@@ -217,7 +231,9 @@ export default function HomePage() {
             <div className="font-light text-sm">
               19th 가을열림전 정수예술촌 초대작가
             </div>
-            <div className="font-light text-sm">더현대 서울 전시전 참여</div>
+            <div className="font-light text-sm">
+              더현대 서울 전시전 참여작가
+            </div>
           </div>
           <div className="flex flex-col pb-10">
             <div className="relative w-96 h-96 flex justify-center items-center rounded-full overflow-hidden">
@@ -227,7 +243,10 @@ export default function HomePage() {
             <div className="font-light text-sm">한국미술협회 진주지부 회원</div>
             <div className="font-light text-sm">개천미술대상전 초대작가</div>
             <div className="font-light text-sm">진주여류작가회 회원</div>
-            <div className="font-light text-sm">진주청년작가회 회원</div>
+            <div className="font-light text-sm">
+              대한민국 등 공모대전 우수상
+            </div>
+            <div className="font-light text-sm">문화예술교욱사 2급</div>
           </div>
         </section>
       </main>
